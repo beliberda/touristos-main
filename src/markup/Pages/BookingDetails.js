@@ -82,7 +82,8 @@ const BookingDetails = () => {
     const [tour, setTour] = useState([]);
     const [tourImg, setTourImg] = useState([]);
     const [baner, setBaner] = useState([]);
-
+    const [regular_price, setPrice] = useState([]);
+    const [sale_price, setSel_Price] = useState([]);
     useEffect(() => {
         WooCommerce.get(`products/${id}`,
 
@@ -90,6 +91,8 @@ const BookingDetails = () => {
             .then((response) => {
                 setTour(response.data);
                 setTourImg(response.data.images);
+                setPrice(response.data.regular_price);
+                setSel_Price(response.data.sale_price)
                 setBaner(response.data.attributes.filter((item) => item.name === 'baner')[0].options[0]);
             })
             .catch((error) => {
@@ -134,8 +137,8 @@ const BookingDetails = () => {
                                     </div>
                                     <div className="tour-price ml-auto">
                                         <span>Цена</span>
-                                        <h2 className="price">17,990 Руб</h2>
-                                        <h4 className="actual-price">23,990 Руб</h4>
+                                        <h2 className="price">{sale_price} Руб</h2>
+                                        <h4 className="actual-price">{regular_price} Руб</h4>
                                     </div>
                                 </div>
                                 <div className="product-gallery on-show-slider">

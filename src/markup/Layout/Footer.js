@@ -19,33 +19,35 @@ class Footer extends Component {
                                     <ul className="info-contact">
                                         <li>
                                             <span>
-                                                <i className="fa fa-map-marker	"></i> Владивосток, Партизанский Проспект,13 офис 5
+                                                <i className="fa fa-map-marker	"></i> Владивосток, ул. Алеутская 28, офис 207
                                             </span>
                                         </li>
 
                                         <li>
                                             <span>
-                                                <i className="fa fa-phone"></i> Позвонить нам: 271-49-05 <br />274-35-90
+                                                
+                                                <i className="fa fa-phone"></i> Позвонить нам: <a href="tel: +7 423 290-94-10">+7 423 290-94-10</a>,<a href="tel: +7 914 791-49-05"> +7 914 791-49-05,</a> <a href="tel: +7 423 290-94-10">+7 423 290-94-10</a> 
+                                                {/* <Button label="Write me an E-Mail" mailto="mailto:no-reply@example.com" /> <bi */}
                                             </span>
+                                            
                                         </li>
 
                                         <li>
                                             <span>
-                                                <i className="fa fa-envelope-o"></i> Mail: info@travel.com
+                                                <i className="fa fa-envelope-o"></i><a href="mailto: turistdv@bk.ru"> Mail: turistdv@bk.ru </a>
                                             </span>
                                         </li>
                                         <li>
                                             <span>
-                                                <i className="fa fa-fax"></i> Whats App: 8(914)791-49-05
+                                                <i className="fa fa-fax"></i><a href='https://wa.me/79147914905?text=Здравствуйте%2C+у+меня+есть+вопросРТО: 021832'> WhatsApp: 8(914)791-49-05 </a>
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
+                                
                                 <ul className="list-inline">
-                                    <li><Link to={''} className="site-button facebook sharp"><i className="fa fa-facebook"></i></Link></li>
-                                    <li><Link to={''} className="site-button google-plus sharp"><i className="fa fa-google-plus"></i></Link></li>
-                                    <li><Link to={''} className="site-button linkedin sharp"><i className="fa fa-linkedin"></i></Link></li>
-                                    <li><Link to={''} className="site-button twitter sharp"><i className="fa fa-twitter"></i></Link></li>
+                                    <li><Link to={'https://www.instagram.com/vldvtour/'} className="site-button instagram sharp"><i className="fa fa-instagram"></i></Link></li>
+                                    <li><Link to={'https://t.me/vldvtour'} className="site-button telegram sharp"><i className="fa fa-telegram"></i></Link></li>
                                 </ul>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-7 footer-col-4">
@@ -91,7 +93,7 @@ class Footer extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6 footer-col-4">
+                            {/* <div className="col-lg-3 col-md-6 col-sm-6 footer-col-4">
                                 <div className="widget widget_gallery">
                                     <h6 className="m-b15 h6 text-uppercase">Галерея</h6>
                                     <div className="dlab-separator bg-white"></div>
@@ -111,15 +113,16 @@ class Footer extends Component {
                                         </SRLWrapper>
                                     </SimpleReactLightbox>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
                 <div className="footer-bottom">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6 col-md-6 text-left"> <span>Copyright © 2022 &#60;RadaevIvan&#62;</span> </div>
-                            <div className="col-lg-6 col-md-6 text-right "><span> Design With <i className="fa fa-heart text-primary heart"></i> By &#60;RadaevIvan&#62; </span> </div>
+                        <div className="row link-dev">
+                        <div className="col-lg-6 col-md-6 text-left "><span><a href='https://pena.marketing' > Powered by Pena Co., Ltd. </a></span> </div>
+                            <div className="col-lg-6 col-md-6 text-right"> <span>Copyright @ currentyear ТК “Новый век”</span></div>
+                            
                         </div>
                     </div>
                 </div>

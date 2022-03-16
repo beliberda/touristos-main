@@ -121,7 +121,7 @@ class Footer extends Component {
                     <div className="container">
                         <div className="row link-dev">
                         <div className="col-lg-6 col-md-6 text-left "><span><a href='https://pena.marketing' > Powered by Pena Co., Ltd. </a></span> </div>
-                            <div className="col-lg-6 col-md-6 text-right"> <span>Copyright @ currentyear ТК “Новый век”</span></div>
+                            <div className="col-lg-6 col-md-6 text-right"> <span> <Link to={'/payment'}>Copyright @ currentyear ТК “Новый век” </Link> </span></div>
                             
                         </div>
                     </div>
